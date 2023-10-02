@@ -1,62 +1,253 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JS Basics</title>
+        <title>exercises</title>
     </head>
-
-
     <body>
-        <script>
-         /* enter your name */
-var name = ( prompt("Enter your name", "a") );
+<script>
 
-         /* enter your gender ex1
-var gender = prompt("Enter your gender (male or female):");
 
-switch (gender.toLowerCase()) {
-  case "male":
-    alert("welcome mr."+ (name));
-    break;
-  case "female":
-    alert("welcome ms."+ (name));
-    break;
-  default:
-    alert("welcome");
-    break;
-}*/
+/* exercises1 */
+/* Q1 */
+var a=-9*3;
+var value=a+(50);
+var y=5;
+var w=7;
+var z=8;
+var t=10;
+var f=4;
+var s=17;
+var x=1.8;
+document.writeln("the value is "+a+"<br>");
+document.writeln("value+50="+"\r"+value+"<br>");
+document.write(s/y+"<br>");
+document.write(y/t+"<br>");
+document.write((f==f)+"<br>");
+document.write((f!=y)+"<br>");
+document.write((w<=z)+"<br>");
+document.write("the ceil of 1.8= \n"+Math.ceil(x)+"<br>");
+document.write("the floor of 1.8= \n"+Math.floor(x)+"<br>");
+/* end Q1 */
 
-         /* enter your gender ex2*/
 
-let gender = "";
+/* Q2-Q6 */
+/* exercises1 */
+var num=(prompt("enter any number"));
+alert(num);
 
-while (gender !== "male" && gender !== "female") {
-  gender = prompt("Please enter your gender (male, female):");
+var number1 = parseInt(prompt("Enter the first number:"));
+
+var number2 = parseInt(prompt("Enter the second number:"));
+
+{
+    if (number1 < number2) {
+    alert("Ascending order: " + number1 + ", " + number2);
+  } else if (number1 > number2) {
+    alert("Ascending order: " + number2 + ", " + number1);
+  } else {
+    alert("The numbers are equal: " + number1 + ", " + number2);
+  }
 }
 
-console.log("You entered the correct gender: " + gender);
- /* enter you drinking: cold or hot */
- var drink =(prompt("What are you drinking: cold or hot?"))
-switch (drink.toLowerCase()){
-case"cold" :
-break;
-case"hot":
-break;
+
+{
+  
+  if (number1 < number2) {
+    alert("The largest number is: " + number2 );
+  } else if (number1 > number2) {
+    alert("The largest number is: " + number1 );
+  } else {
+    alert("The numbers are equal: " + number1 + ", " + number2);
+  }
 }
-var favdrink=(prompt("What's your favorite drink?"));
+sum=number1+number2;
+alert("The sum of the two numbers equals: " + sum);
+/* end exercises1 */
 
 
-var order=[];
-order.push(name,gender,drink,favdrink)
+/* exercises2 */
+var numbers = parseInt(prompt("Enter a number between 1-9 just : "));
+switch (numbers) {
+    case 1:
+      alert("ONE");
+      break;
+    case 2:
+      alert("TWO");
+      break;
+    case 3:
+      alert("THREE");
+      break;
+    case 4:
+      alert("FOUR");
+      break;
+    case 5:
+      alert("FIVE");
+      break;
+    case 6:
+      alert("SIX");
+      break;
+    case 7:
+      alert("SEVEN");
+      break;
+    case 8:
+      alert("EIGHT");
+      break;
+    case 9:
+      alert("NINE");
+      break;
+    default:
+      alert("PLEASE TRY AGAIN");
+  }
+/* end exercises2 */
+/* end Q2-Q5 */
 
 
-document.write("welcome\n\n"+(name)+"\n\nThis is your favorite drink\n\n"+(favdrink));
-console.log("welcome\n\n"+(name)+"\n\nThis is your favorite drink\n\n"+(favdrink));
-document.write("welcome\n\n"+(name)+"\n\nThis is your favorite drink\n\n"+(favdrink));
-console.log(order);
+
+"<hr>"
+
+for (var b = 0; b <= 5; b++) {
+  alert(b);
+}
 
 
-        </script>
+var FiveNum = "";
+
+for (var c = 0; c <= 5; c++) {
+  FiveNum += c + " ";
+}
+
+alert(FiveNum);
+
+
+for (var d = 0; d <= 20; d++) {
+  if (d % 3 === 0) {
+    console.log(d);
+  }
+}
+
+
+
+
+
+while (true) {
+  userInput = prompt("enter a number between 0 and 100:");
+
+  var number = parseInt(userInput);
+
+  if (!isNaN(number) && number >= 0 && number <= 100) {
+    alert("You entered a valid number: " + number);
+    break; 
+  } else {
+    alert("Invalid input. Please enter a number between 0 and 100.");
+  }
+}
+
+
+
+
+
+var userInput;
+
+while (true) {
+  userInput = prompt("Please enter a number between 0 and 100:");
+
+  // Check if the input is not a number
+  if (isNaN(userInput)) {
+    alert("Invalid input. Please enter a valid number.");
+  } else {
+    var number = parseInt(userInput);
+
+    // Check if the number is within the range of 0 to 100
+    if (!isNaN(number) && number >= 0 && number <= 100) {
+      alert("You entered a valid number: " + number);
+      break; // Exit the loop if a valid number is entered
+    } else {
+      alert("Invalid input. Please enter a number between 0 and 100.");
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+var hunum;
+
+while (true) {
+  hunum = prompt(" enter a number between 0 and 100:");
+
+  
+  if (isNaN(hunum)) {
+    alert("Invalid input!!!.. Please enter a valid number.");
+  } else {
+    var number = parseInt(hunum);
+
+    if (number >= 0 && number <= 100) {
+      alert("You entered a valid number: " + number);
+      break; 
+    } else {
+      alert("Invalid input!... Please enter a number between 0 and 100.");
+    }
+  }
+}
+
+
+var intNum = prompt("enter an integer:");
+var number = parseInt(intNum);
+
+if (!isNaN(number) && Number.isInteger(number)) {
+  var sum = 0;
+
+  for (var i = 0; i <= number; i++) {
+    sum += i;
+  }
+
+  alert("The sum of integers from 0 to " + number + " is: " + sum);
+} 
+
+
+
+
+var userInput = prompt("Please enter an integer:");
+var number = parseInt(userInput);
+
+if (!isNaN(number) && Number.isInteger(number) && number >= 0) {
+  var sum = 0;
+
+  for (var i = 0; i <= number; i++) {
+    sum += i;
+  }
+
+  var average = sum / 11;
+
+  alert("The average of integers from 0 to " + number + " is: " + average);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
 
     </body>
-   
 </html>
