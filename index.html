@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Basics</title>
+    </head>
+
+
+    <body>
+        <script>
+         /* enter your name */
+var name = ( prompt("Enter your name", "a") );
+
+         /* enter your gender ex1
+var gender = prompt("Enter your gender (male or female):");
+
+switch (gender.toLowerCase()) {
+  case "male":
+    alert("welcome mr."+ (name));
+    break;
+  case "female":
+    alert("welcome ms."+ (name));
+    break;
+  default:
+    alert("welcome");
+    break;
+}*/
+
+         /* enter your gender ex2*/
+
+let gender = "";
+
+while (gender !== "male" && gender !== "female") {
+  gender = prompt("Please enter your gender (male, female):");
+}
+
+console.log("You entered the correct gender: " + gender);
+ /* enter you drinking: cold or hot */
+ var drink =(prompt("What are you drinking: cold or hot?"))
+switch (drink.toLowerCase()){
+case"cold" :
+break;
+case"hot":
+break;
+}
+var favdrink=(prompt("What's your favorite drink?"));
+
+
+var order=[];
+order.push(name,gender,drink,favdrink)
+
+
+document.write("welcome\n\n"+(name)+"\n\nThis is your favorite drink\n\n"+(favdrink));
+console.log("welcome\n\n"+(name)+"\n\nThis is your favorite drink\n\n"+(favdrink));
+document.write("welcome\n\n"+(name)+"\n\nThis is your favorite drink\n\n"+(favdrink));
+console.log(order);
+
+
+        </script>
+
+    </body>
+   
+</html>
